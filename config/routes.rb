@@ -1,4 +1,11 @@
 ZNNongYe::Application.routes.draw do
+  get "main_page/index"
+  resources :products
+
+  resources :policies
+
+  resources :agricultures
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
