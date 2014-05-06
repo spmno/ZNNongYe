@@ -1,0 +1,29 @@
+<h1>Listing agricultures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @agricultures.each do |agriculture| %>
+      <tr>
+        <td><%= agriculture.title %></td>
+        <td><%= agriculture.content %></td>
+        <td><%= link_to 'Show', agriculture %></td>
+        <td><%= link_to 'Edit', edit_agriculture_path(agriculture) %></td>
+        <td><%= link_to 'Destroy', agriculture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Agriculture', new_agriculture_path %>
