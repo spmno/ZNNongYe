@@ -1,40 +1,63 @@
-<h1>智能农业</h1>
-<%= link_to "农业信息", agricultures_path %>
-<%= link_to "相关政策", policies_path %>
-<%= link_to "产品介绍", products_path %>
-<%= link_to "前沿技术", products_path %>
-
-<h3>农业信息</h3>
-<% @agricultures.each do |agriculture| %>
-    <tr>
-      <td><%= agriculture.title %></td>
-      <td><%= agriculture.content %></td>
-      <td><%= link_to 'Show', agriculture %></td>
-      <td><%= link_to 'Edit', edit_agriculture_path(agriculture) %></td>
-      <td><%= link_to 'Destroy', agriculture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-<% end %>
-
-<h3>相关政策</h3>
-<% @policies.each do |policy| %>
-    <tr>
-      <td><%= policy.title %></td>
-      <td><%= policy.content %></td>
-      <td><%= link_to 'Show', policy %></td>
-      <td><%= link_to 'Edit', edit_policy_path(policy) %></td>
-      <td><%= link_to 'Destroy', policy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-<% end %>
 
 
-<h3>产品介绍</h3>
-<% @products.each do |product| %>
-    <tr>
-      <td><%= product.title %></td>
-      <td><%= product.content %></td>
-      <td><%= link_to 'Show', product %></td>
-      <td><%= link_to 'Edit', edit_product_path(product) %></td>
-      <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-<% end %>
+<div class="container">
+  <h1>智能农业</h1>
+  <ul class="nav">
+    <li><%= link_to "农业信息", agricultures_path %></li>
+    <li><%= link_to "相关政策", policies_path %></li>
+    <li><%= link_to "产品介绍", products_path %></li>
+    <li><%= link_to "前沿技术", products_path %></li>
+  </ul>
 
+  <div class="content">
+    <div class="image_show">
+      <img src="/images/grass.jpg" />
+    </div>
+
+    <div class="info">
+      <h3>农业信息</h3>
+      <% @agricultures.each do |agriculture| %>
+          <tr>
+            <td><%= agriculture.title %></td>
+            <td><%= agriculture.content %></td>
+            <td><%= link_to 'Show', agriculture %></td>
+            <td><%= link_to 'Edit', edit_agriculture_path(agriculture) %></td>
+            <td><%= link_to 'Destroy', agriculture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+    </div>
+
+    <div class="info">
+      <h3>相关政策</h3>
+      <% @policies.each do |policy| %>
+          <tr>
+            <td><%= policy.title %></td>
+            <td><%= policy.content %></td>
+            <td><%= link_to 'Show', policy %></td>
+            <td><%= link_to 'Edit', edit_policy_path(policy) %></td>
+            <td><%= link_to 'Destroy', policy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+    </div>
+
+    <div class="info">
+      <h3>产品介绍</h3>
+      <% @products.each do |product| %>
+          <tr>
+            <td><%= product.title %></td>
+            <td><%= product.content %></td>
+            <td><%= link_to 'Show', product %></td>
+            <td><%= link_to 'Edit', edit_product_path(product) %></td>
+            <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+    </div>
+
+
+  </div>
+
+
+
+
+
+</div>

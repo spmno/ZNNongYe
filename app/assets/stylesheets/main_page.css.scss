@@ -1,3 +1,37 @@
 // Place all the styles related to the main_page controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav {
+  float: left;
+  width: 16em;
+  height: 18em;
+  background: url(/images/navi_background.jpg) no-repeat;
+
+  li {
+    :hover {
+      color: green;
+    }
+    a {
+      width: 6em;
+      font-size: 1.5em;
+      color: white;
+      margin: 0.5em;
+      list-style: none;
+    }
+  }
+}
+
+.content {
+  float: left;
+  width: 70%;
+  .image_show {
+    height: 18em;
+  }
+}
