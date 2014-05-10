@@ -1,4 +1,5 @@
 ZNNongYe::Application.routes.draw do
+  devise_for :users
   get "main_page/index"
   resources :products
 

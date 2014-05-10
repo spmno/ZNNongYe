@@ -36,6 +36,8 @@ gem 'carrierwave'
 #pagination
 gem 'kaminari'
 
+#devise
+gem 'devise'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
