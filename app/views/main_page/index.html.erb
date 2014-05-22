@@ -1,22 +1,72 @@
+<div id="total-wrap">
+  <div class="top-background wsite-background wsite-custom-background">
+    <div class="cross"></div>
+    <div id="header-wrap">
+      <div class="main-container">
+        <table id="header">
+          <tbody><tr>
+            <td id="header-right">
+              <table>
+                <tbody><tr>
+                  <td class="phone-number"><span class="wsite-text wsite-phone">登录 &nbsp;注册</span></td>
+                  <td class="social"></td>
+                  <td class="search"></td>
+                </tr>
+                </tbody></table>
+            </td>
+          </tr>
+          </tbody></table>
+      </div><!-- end container -->
+    </div><!-- end header-wrap -->
 
-
-<div class="container">
-  <h1>智能农业</h1>
-  <ul class="nav">
-    <li><%= link_to "农业信息", agricultures_path %></li>
-    <li><%= link_to "相关政策", policies_path %></li>
-    <li><%= link_to "产品介绍", products_path %></li>
-    <li><%= link_to "前沿技术", products_path %></li>
-  </ul>
-
-  <div class="content">
-    <div class="image_show">
-      <img src="/images/grass.jpg" />
+    <div id="nav-wrap">
+      <div class="main-container header-align-outer">
+        <div class="header-align-mid">
+          <div class="header-align-inner">
+            <div id="logo"><span class="wsite-logo"><a href="/"><span id="wsite-title">智能农业</span></a></span></div>
+            <div class="nav-container">
+              <ul class="wsite-menu-default">
+                <li id="active" class="wsite-nav-0" style="position: relative;">
+                  <a href="/" style="position: relative;">Home</a>
+                </li>
+                <li class="wsite-nav-1" style="position: relative;">
+                  <%= link_to "农业信息", agricultures_path %>
+                </li>
+                <li class="wsite-nav-2" style="position: relative;">
+                  <%= link_to "相关政策", policies_path %>
+                </li>
+                <li class="wsite-nav-3" style="position: relative;">
+                  <%= link_to "前沿技术", products_path %>
+                </li>
+                <li class="wsite-nav-4" style="position: relative;">
+                  <%= link_to "产品介绍", products_path %>
+                </li>
+              </ul>
+            </div>
+          </div><!-- end header align inner -->
+        </div><!-- end header align mid -->
+      </div><!-- end container -->
     </div>
 
-    <div class="row">
-      <div class="span8">
-        <h3>农业信息</h3>
+  </div>
+
+  <div id="main-banner-wrap">
+    <div class="main-container">
+      <div id="main-banner">
+
+        <div class="wsite-header"></div>
+
+        <div style="clear:both;"></div>
+
+      </div><!-- end banner -->
+    </div><!-- end container -->
+  </div><!-- end banner-wrap -->
+
+  <div id="main-wrap">
+    <div class="main-container">
+      <div id="wsite-content" class="wsite-elements wsite-not-footer">
+        <h2 class="wsite-content-title" style="text-align:left;"><strong><font size="6">农业信息.</font></strong></h2>
+
         <% @agricultures.each do |agriculture| %>
             <tr>
               <td><%= agriculture.title %></td>
@@ -26,10 +76,14 @@
               <td><%= link_to 'Destroy', agriculture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
         <% end %>
-      </div>
 
-      <div class="span8">
-        <h3>相关政策</h3>
+        <div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+          <hr class="styled-hr" style="width:100%;">
+          <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+        </div>
+
+        <h2 class="wsite-content-title" style="text-align:left;"><strong><font size="6">相关政策.</font></strong></h2>
+
         <% @policies.each do |policy| %>
             <tr>
               <td><%= policy.title %></td>
@@ -39,10 +93,13 @@
               <td><%= link_to 'Destroy', policy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
         <% end %>
-      </div>
 
-      <div class="span8">
-        <h3>产品介绍</h3>
+        <div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
+          <hr class="styled-hr" style="width:100%;">
+          <div style="height: 20px; overflow: hidden; width: 100%;"></div>
+        </div>
+
+        <h2 class="wsite-content-title" style="text-align:left;"><strong><font size="6">产品介绍.</font></strong></h2>
         <% @products.each do |product| %>
             <tr>
               <td><%= product.title %></td>
@@ -52,15 +109,7 @@
               <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
         <% end %>
-      </div>
-    </div>
-
-
-
-  </div>
-
-
-
-
-
+    </div><!-- end container -->
+  </div><!-- end main-wrap -->
+</div>
 </div>

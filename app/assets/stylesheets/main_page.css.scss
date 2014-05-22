@@ -8,11 +8,22 @@
   margin: 0px;
 }
 
-.nav {
+
+.wsite-background {
+  background-image: url('/images/Large-Farming.jpg') !important;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+}
+body.wsite-background {
+  background-attachment: fixed !important;
+}
+
+
+.nav-wrap {
   float: left;
   width: 16em;
   height: 18em;
-  background: url(/images/navi_background.jpg) no-repeat;
 
   li {
     :hover {
@@ -28,10 +39,3 @@
   }
 }
 
-.content {
-  float: left;
-  width: 70%;
-  .image_show {
-    height: 18em;
-  }
-}
