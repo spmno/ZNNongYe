@@ -519,7 +519,7 @@ h2.blog-title a, .blog-post .blog-header h2.blog-title a { border:none;}
 
 #footer-wrap .container .weebly-footer, #footer-wrap .container .weebly-footer a, #weeblyfootertext  {color:#fff; text-align:right;}
 #footer-wrap .container .weebly-footer, #weeblyfootertext  {float:right; text-transform:uppercase; font-size:14px; font-weight:600;}
-#weeblyfootertext a {color#fff !important;}
+#weeblyfootertext a {color:#fff !important;}
 
 #footer-wrap .container .wsite-form-input, #footer-wrap .container .wsite-search-element-input {
 	border:1px #333 solid;
