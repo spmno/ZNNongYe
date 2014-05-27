@@ -69,7 +69,7 @@ blockquote {
 	color:#999;
 }
 h2 {
-	font-size:17px ;
+	font-size:2.4em ;
 	padding: .5em 0 0.8em 0;
 	letter-spacing:1px;
 	line-height: 1.2;
@@ -79,6 +79,10 @@ h2 {
 
 h2 a {
 	color: #373737;
+}
+
+h2 .wsite-content-title {
+    font-size:2.4em;
 }
 
 p {
@@ -207,80 +211,8 @@ p {
 #footer-wrap .wsite-social-item {
 	background-image:url(/images/social-black.png);
 }
-.wsite-social-facebook {background-position:0 0;}
-	.wsite-social-facebook:hover {background-position:0 -23px;}
-	.wsite-social-facebook:active {background-position:0 -46px;}
-.wsite-social-pinterest {background-position:-23px 0;}
-	.wsite-social-pinterest:hover {background-position:-23px -23px;}
-	.wsite-social-pinterest:active {background-position:-23px -46px;}
-.wsite-social-twitter {background-position:-46px 0;}
-	.wsite-social-twitter:hover {background-position:-46px -23px;}
-	.wsite-social-twitter:active {background-position:-46px -46px;}
-.wsite-social-linkedin {background-position:-69px 0;}
-	.wsite-social-linkedin:hover {background-position:-69px -23px;}
-	.wsite-social-linkedin:active {background-position:-69px -46px;}
-.wsite-social-mail {background-position:-92px 0;}
-	.wsite-social-mail:hover {background-position:-92px -23px;}
-	.wsite-social-mail:active {background-position:-92px -46px;}
-.wsite-social-rss {background-position:-115px 0;}
-	.wsite-social-rss:hover {background-position:-115px -23px;}
-	.wsite-social-rss:active {background-position:-115px -46px;}
-.wsite-social-flickr {background-position:-138px 0;}
-	.wsite-social-flickr:hover {background-position:-138px -23px;}
-	.wsite-social-flickr:active {background-position:-138px -46px;}
-.wsite-social-plus {background-position:-161px 0;}
-	.wsite-social-plus:hover {background-position:-161px -23px;}
-	.wsite-social-plus:active {background-position:-161px -46px;}
-.wsite-social-vimeo {background-position:-184px 0;}
-	.wsite-social-vimeo:hover {background-position:-184px -23px;}
-	.wsite-social-vimeo:active {background-position:-184px -46px;}
-.wsite-social-yahoo {background-position:-207px 0;}
-	.wsite-social-yahoo:hover {background-position:-207px -23px;}
-	.wsite-social-yahoo:active {background-position:-207px -46px;}
-.wsite-social-youtube {background-position:-230px 0;}
-	.wsite-social-youtube:hover {background-position:-230px -23px;}
-	.wsite-social-youtube:active {background-position:-230px -46px;}
 
 
-#header-right .wsite-social {
-	vertical-align: middle;
-	margin-left:10px ;
-}
-
-#header-right .wsite-social-item {
-	width: 32px;
-	height: 32px;
-	margin: 0 0 0 3px;
-	background-image:url(/images/social.png);
-  -webkit-transition: background 0.5s ease-out;  /* Safari 3.2+, Chrome */
-     -moz-transition: background 0.5s ease-out;  /* Firefox 4-15 */
-       -o-transition: background 0.5s ease-out;  /* Opera 10.5–12.00 */
-          transition: background 0.5s ease-out;  /* Firefox 16+, Opera 12.50+ */
-}
-
-#header-right .wsite-social-rss {background-position:-158px 0;}
-#header-right .wsite-social-linkedin {background-position:-79px 0;}
-#header-right .wsite-social-facebook {background-position:0px 0; }
-#header-right .wsite-social-twitter {background-position:-40px 0;}
-#header-right .wsite-social-mail {background-position:-119px 0;}
-#header-right .wsite-social-pinterest {background-position:-277px 0;}
-#header-right .wsite-social-youtube {background-position:-395px 0;}
-#header-right .wsite-social-plus {background-position:-237px 0;}
-#header-right .wsite-social-flickr {background-position:-198px 0;}
-#header-right .wsite-social-vimeo {background-position:-316px 0;}
-#header-right .wsite-social-yahoo {background-position:-356px 0;}
-
-#header-right .wsite-social-rss:hover {background-position:-158px -40px;}
-#header-right .wsite-social-linkedin:hover {background-position:-79px -40px;}
-#header-right .wsite-social-facebook:hover {background-position:0px -40px; }
-#header-right .wsite-social-twitter:hover {background-position:-40px -40px;}
-#header-right .wsite-social-mail:hover {background-position:-119px -40px;}
-#header-right .wsite-social-pinterest:hover {background-position:-277px -40px;}
-#header-right .wsite-social-youtube:hover {background-position:-395px -40px;}
-#header-right .wsite-social-plus:hover {background-position:-237px -40px;}
-#header-right .wsite-social-flickr:hover {background-position:-198px -40px;}
-#header-right .wsite-social-vimeo:hover {background-position:-316px -40px;}
-#header-right .wsite-social-yahoo:hover {background-position:-356px -40px;}
 
 /* Header: Search Box
 --------------------------------------------------------------------------------*/

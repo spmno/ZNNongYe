@@ -1,4 +1,4 @@
-class ProductsController < ApplicationController
+class ProductsController < ApplicationNaviController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
 
   # GET /products

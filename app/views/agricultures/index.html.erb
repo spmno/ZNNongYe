@@ -1,7 +1,8 @@
-<h1>农业信息列表</h1>
+<div class="container">
+  <h2><strong>农业信息</strong></h2>
 
-<table>
-  <thead>
+  <table>
+    <thead>
     <tr>
       <th>标题</th>
       <th>内容</th>
@@ -9,21 +10,23 @@
       <th></th>
       <th></th>
     </tr>
-  </thead>
+    </thead>
 
-  <tbody>
+    <tbody>
     <% @agricultures.each do |agriculture| %>
-      <tr>
-        <td><%= agriculture.title %></td>
-        <td><%= agriculture.content %></td>
-        <td><%= link_to '显示', agriculture %></td>
-        <td><%= link_to '编辑', edit_agriculture_path(agriculture) %></td>
-        <td><%= link_to '删除', agriculture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <tr>
+          <td><%= agriculture.title %></td>
+          <td><%= agriculture.content %></td>
+          <td><%= link_to '显示', agriculture %></td>
+          <td><%= link_to '编辑', edit_agriculture_path(agriculture) %></td>
+          <td><%= link_to '删除', agriculture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
     <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<br>
+  <br>
 
-<%= link_to '新建农业信息', new_agriculture_path %>
+  <%= link_to '新建农业信息', new_agriculture_path %>
+
+</div>

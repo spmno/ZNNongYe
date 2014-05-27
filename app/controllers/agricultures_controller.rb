@@ -1,4 +1,4 @@
-class AgriculturesController < ApplicationController
+class AgriculturesController < ApplicationNaviController
   before_action :set_agriculture, only: [:show, :edit, :update, :destroy]
 
   # GET /agricultures

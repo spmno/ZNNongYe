@@ -1,4 +1,4 @@
-class PoliciesController < ApplicationController
+class PoliciesController < ApplicationNaviController
   before_action :set_policy, only: [:show, :edit, :update, :destroy]
 
   # GET /policies

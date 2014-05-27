@@ -1,4 +1,4 @@
-class MainPageController < ApplicationController
+class MainPageController < ApplicationNaviController
   def index
     @agricultures = Agriculture.last(5)
     @policies = Policy.last(5)
