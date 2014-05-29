@@ -198,50 +198,6 @@ p {
 #header-right .phone-number .wsite-text a {}
 #header-right .phone-number .wsite-text a:hover {}
 
-/* Social Links
---------------------------------------------------------------------------------*/
-
-
-.wsite-social-item {
-	width: 23px;
-	height: 23px;
-	margin: 0 0 0 3px;
-	background-image:url(/images/social-light.png);
-}
-#footer-wrap .wsite-social-item {
-	background-image:url(/images/social-black.png);
-}
-
-
-
-/* Header: Search Box
---------------------------------------------------------------------------------*/
-
-#header-right .search {}
-
-#header-right .wsite-search {
-	margin-left:15px;
-	vertical-align: middle;
-}
-
-#header-right .wsite-search-input {
-	width: 200px;
-	border:0 ;
-	line-height:20px;
-	height:20px;
-	border-radius:4px;
-	color: #fff;
-	background:url(/images/opaque-white.png);
-}
-
-#header-right .wsite-search-button {
-	position: absolute;
-	width: 13px;
-	height: 13px;
-	top:7px;
-	right:7px;
-	background:url(/images/search.png) no-repeat ;
-}
 
 /* Navigation
 --------------------------------------------------------------------------------*/
