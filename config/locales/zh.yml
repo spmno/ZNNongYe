@@ -1,0 +1,15 @@
+zh:
+  setup: "设置"
+  errors:
+    messages:
+      not_saved: "保存错误"
+
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            password:
+              too_short: "密码太短"
+            password_confirmation:
+              confirmation: "确认密码"
