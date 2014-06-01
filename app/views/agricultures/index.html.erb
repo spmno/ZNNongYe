@@ -1,32 +1,28 @@
 <div class="main-container">
   <h2><strong>农业信息</strong></h2>
 
-  <table>
-    <thead>
-    <tr>
-      <th>标题</th>
-      <th>内容</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-    </thead>
+  <% @agricultures.each do |agriculture| %>
+    <div>
+      <h3><%= agriculture.title %></h3>
+    </div>
+    <div>
+      <%= agriculture.content %>
+    </div>
 
-    <tbody>
-    <% @agricultures.each do |agriculture| %>
-        <tr>
-          <td><%= agriculture.title %></td>
-          <td><%= agriculture.content %></td>
-          <td><%= link_to '显示', agriculture %></td>
-          <td><%= link_to '编辑', edit_agriculture_path(agriculture) %></td>
-          <td><%= link_to '删除', agriculture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        </tr>
+    <%= link_to '显示', agriculture %>
+    <% if current_user %>
+      <%= link_to '编辑', edit_agriculture_path(agriculture) %>
+      <%= link_to '删除', agriculture, method: :delete, data: { confirm: 'Are you sure?' } %>
     <% end %>
-    </tbody>
-  </table>
+
+
+
+  <% end %>
 
   <br>
-
-  <%= link_to '新建农业信息', new_agriculture_path %>
+  <br>
+  <% if current_user %>
+    <%= link_to '新建农业信息', new_agriculture_path %>
+  <% end %>
 
 </div>

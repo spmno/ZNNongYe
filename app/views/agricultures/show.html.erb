@@ -1,14 +1,17 @@
-<p id="notice"><%= notice %></p>
+<div class="main-container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>标题:</strong>
-  <%= @agriculture.title %>
-</p>
+  <p>
+  <h3><%= @agriculture.title %></h3>
+  </p>
 
-<p>
-  <strong>内容:</strong>
-  <%= @agriculture.content %>
-</p>
+  <p>
+    <%= @agriculture.content %>
+  </p>
+  <% if current_user %>
+    <%= link_to '编辑', edit_agriculture_path(@agriculture) %> |
+  <% end %>
 
-<%= link_to '编辑', edit_agriculture_path(@agriculture) %> |
-<%= link_to '返回', agricultures_path %>
+  <%= link_to '返回', agricultures_path %>
+</div>
+
